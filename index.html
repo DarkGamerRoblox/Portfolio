@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#111214" />
+  <meta name="description" content="Dark Gamer — Roblox Full-Stack Systems Developer focused on Luau, networking, serialization, performance, UI, and scalable game architecture." />
+  <title>Dark Gamer — Roblox Systems Developer</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    (() => {
+      try {
+        const saved = localStorage.getItem('darkgamer-theme');
+        if (saved === 'light' || saved === 'dark') document.documentElement.dataset.theme = saved;
+      } catch {}
+    })();
+  </script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#overview" aria-label="Dark Gamer portfolio home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 7.5 12 3l8 4.5v9L12 21l-8-4.5z"/><path d="M8.5 9.5 12 7.5l3.5 2v5L12 16.5l-3.5-2z"/>
+        </svg>
+      </span>
+      Dark Gamer
+      <span class="brand-divider"></span>
+      <span class="brand-docs">portfolio</span>
+    </a>
+
+    <nav class="topnav" aria-label="Primary navigation">
+      <a class="active" href="#work">Work</a>
+      <a href="#open-source">Open source</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#about">About</a>
+    </nav>
+
+    <div class="header-actions">
+      <span class="version">Luau / Roblox</span>
+      <a class="icon-button" href="https://github.com/DarkGamerRoblox" target="_blank" rel="noreferrer" aria-label="GitHub profile">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.3-.4 6.8-1.6 6.8-7A5.4 5.4 0 0 0 19.3 4 5 5 0 0 0 19.2.5S18 0 15 2a13.4 13.4 0 0 0-7 0C5 0 3.8.5 3.8.5A5 5 0 0 0 3.7 4a5.4 5.4 0 0 0-1.5 3.7c0 5.4 3.5 6.6 6.8 7A4.8 4.8 0 0 0 8 18v4"/><path d="M8 19c-3 .9-3-1.5-4-2"/></svg>
+      </a>
+      <button class="icon-button theme-button" type="button" data-toggle-theme aria-label="Switch to light theme">
+        <svg class="icon theme-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 1 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        <svg class="icon theme-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      </button>
+      <button class="icon-button mobile-menu-button" type="button" data-open-menu aria-label="Open navigation" aria-expanded="false">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-bar"><span>Dark Gamer</span><span>/</span><strong>Portfolio</strong></div>
+
+<div class="layout">
+  <aside class="sidebar" aria-label="Portfolio navigation">
+    <nav>
+      <div class="nav-group">
+        <div class="nav-heading">Overview</div>
+        <a class="nav-link active" href="#overview">Introduction</a>
+        <a class="nav-link" href="#snapshot">Developer snapshot</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-heading">Selected work</div>
+        <a class="nav-link" href="#work">Roblox experiences</a>
+        <a class="nav-link" href="#open-source">Pancakes</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-heading">Engineering</div>
+        <a class="nav-link" href="#capabilities">Capabilities</a>
+        <a class="nav-link" href="#stack">Toolbox</a>
+        <a class="nav-link" href="#principles">Principles</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-heading">Profile</div>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </div>
+    </nav>
+    <div class="sidebar-foot">
+      <span>Roblox / Luau</span>
+      <span>Systems · Performance · UI</span>
+    </div>
+  </aside>
+
+  <main class="article home" id="main-content">
+    <div class="breadcrumb">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+      Portfolio
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+      Overview
+    </div>
+
+    <section id="overview" class="hero-section">
+      <p class="eyebrow">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m13 2-9 12h7l-1 8 10-12h-7l1-8Z"/></svg>
+        ROBLOX FULL-STACK SYSTEMS DEVELOPER
+      </p>
+      <h1>I build the systems behind Roblox games.</h1>
+      <p class="lead">I’m <strong>Dark Gamer</strong>, a Luau developer focused on scalable game architecture, networking, serialization, performance, reactive UI, and reusable tooling.</p>
+      <div class="page-meta"><span>Luau</span><span>Roblox Studio</span><span>Open source</span></div>
+      <div class="intro-actions">
+        <a class="button primary" href="#work">
+          View selected work
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5"/></svg>
+        </a>
+        <a class="button" href="https://github.com/DarkGamerRoblox" target="_blank" rel="noreferrer">
+          GitHub
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
+        </a>
+      </div>
+
+      <div class="code-block hero-code">
+        <div class="code-header">
+          <span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 8-4 4 4 4m8-8 4 4-4 4m-3-10-2 20"/></svg>
+            profile.luau
+          </span>
+          <div><span class="language">Luau</span><button class="copy-button" type="button" aria-label="Copy profile code"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h4"/></svg><span class="copy-label">Copy</span></button></div>
+        </div>
+        <pre tabindex="0"><code><span class="syntax-keyword">local</span> Developer = {
+    role = <span class="syntax-string">"Roblox Full-Stack Systems Developer"</span>,
+    language = <span class="syntax-string">"Luau"</span>,
+    focus = { <span class="syntax-string">"Architecture"</span>, <span class="syntax-string">"Networking"</span>, <span class="syntax-string">"Performance"</span> },
+    builds = { <span class="syntax-string">"Games"</span>, <span class="syntax-string">"Libraries"</span>, <span class="syntax-string">"Developer tooling"</span> },
+}
+
+<span class="syntax-keyword">return</span> Developer</code></pre>
+      </div>
+    </section>
+
+    <section class="doc-section" id="snapshot">
+      <h2>Developer snapshot<a class="anchor-link" aria-label="Link to Developer snapshot" href="#snapshot">#</a></h2>
+      <p>I work across the full Roblox stack—from client UI and gameplay to server architecture, data, networking, and performance-critical infrastructure.</p>
+      <div class="stat-grid">
+        <div class="stat-card"><strong>4+ years</strong><span>Roblox development</span></div>
+        <div class="stat-card"><strong>4.6M+</strong><span>Combined visits across listed work</span></div>
+        <div class="stat-card"><strong>Full stack</strong><span>Client, server, UI & infrastructure</span></div>
+        <div class="stat-card"><strong>Open source</strong><span>Libraries built for Luau developers</span></div>
+      </div>
+      <aside class="callout note">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10v1"/></svg>
+        <div><strong>What I optimize for</strong><p>Performance first, modular architecture, readable code, strong typing, and systems that remain maintainable as a game grows.</p></div>
+      </aside>
+    </section>
+
+    <section class="doc-section" id="work">
+      <h2>Selected Roblox work<a class="anchor-link" aria-label="Link to Selected Roblox work" href="#work">#</a></h2>
+      <p>Published experiences where I worked on core scripting, gameplay systems, and the technical foundation behind the game.</p>
+
+      <div class="project-list">
+        <article class="project-card featured-project">
+          <div class="project-topline"><span class="project-index">01</span><span class="project-status">Main development</span></div>
+          <div class="project-content">
+            <div>
+              <h3>Bee ReMasters Simulator</h3>
+              <p>Large-scale simulator work spanning gameplay systems, progression, world systems, client/server architecture, UI, data handling, and performance-oriented bee and flower simulation.</p>
+            </div>
+            <div class="tag-row"><span>Architecture</span><span>Gameplay</span><span>Networking</span><span>UI</span><span>Performance</span></div>
+          </div>
+        </article>
+
+        <div class="project-grid">
+          <article class="project-card compact-project">
+            <div class="project-topline"><span class="project-index">02</span><span class="project-status">Main Scripter</span></div>
+            <h3>Bee Masters Simulator</h3>
+            <p>Core scripting and reusable game systems for a published Roblox simulator.</p>
+            <div class="tag-row"><span>Luau</span><span>Systems</span></div>
+          </article>
+          <article class="project-card compact-project">
+            <div class="project-topline"><span class="project-index">03</span><span class="project-status">Main Scripter</span></div>
+            <h3>Bee Paradise</h3>
+            <p>Gameplay and progression systems with a focus on maintainable Roblox architecture.</p>
+            <div class="tag-row"><span>Gameplay</span><span>Data</span></div>
+          </article>
+          <article class="project-card compact-project">
+            <div class="project-topline"><span class="project-index">04</span><span class="project-status">Main Scripter</span></div>
+            <h3>Bee RNG</h3>
+            <p>Roblox experience development covering game logic, progression, and supporting systems.</p>
+            <div class="tag-row"><span>Systems</span><span>Roblox</span></div>
+          </article>
+          <article class="project-card compact-project muted-project">
+            <div class="project-topline"><span class="project-index">+</span><span class="project-status">Client work</span></div>
+            <h3>Additional projects</h3>
+            <p>Commissioned and unreleased Roblox development work across multiple teams and projects.</p>
+            <div class="tag-row"><span>Commission</span><span>Team work</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="doc-section" id="open-source">
+      <h2>Open-source engineering<a class="anchor-link" aria-label="Link to Open-source engineering" href="#open-source">#</a></h2>
+      <p>Outside game development, I build reusable Luau infrastructure designed around real Roblox workloads.</p>
+
+      <article class="oss-card">
+        <div class="oss-header">
+          <div class="oss-mark" aria-hidden="true">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 10 5-10 5L2 8l10-5Z"/><path d="m2 12 10 5 10-5M2 16l10 5 10-5"/></svg>
+          </div>
+          <div><span class="eyebrow mini">FEATURED LIBRARY</span><h3>Pancakes</h3></div>
+          <a class="button oss-button" href="https://github.com/DarkGamerRoblox/Pancakes" target="_blank" rel="noreferrer">View repository <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+        </div>
+        <p class="oss-lead">A performance-focused serialization library for Roblox Luau, built around compact buffers, schemas, Auto serialization, custom converters, runtime configuration, and Roblox datatypes.</p>
+        <div class="cards oss-features">
+          <div class="card"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m13 2-9 12h7l-1 8 10-12h-7l1-8Z"/></svg><strong>Performance</strong><span>Designed and benchmarked around hot-path serialization workloads.</span></div>
+          <div class="card"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m8 8-4 4 4 4m8-8 4 4-4 4m-3-10-2 20"/></svg><strong>Typed schemas</strong><span>Reusable layouts for stable records and compact wire formats.</span></div>
+          <div class="card"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg><strong>Roblox-native</strong><span>Built for Luau buffers and the datatypes Roblox games actually send.</span></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="doc-section" id="capabilities">
+      <h2>Capabilities<a class="anchor-link" aria-label="Link to Capabilities" href="#capabilities">#</a></h2>
+      <p>The areas I’m most comfortable owning end-to-end.</p>
+      <div class="cards capability-cards">
+        <div class="card"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 10 5-10 5L2 8l10-5Z"/><path d="m2 12 10 5 10-5M2 16l10 5 10-5"/></svg><strong>Systems architecture</strong><span>Modular services, clean boundaries, reusable modules, and scalable project structure.</span></div>
+        <div class="card"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M3 12h6m6 0h6M12 3v6m0 6v6"/></svg><strong>Networking</strong><span>Client/server protocols, validation, replication strategies, and bandwidth-aware design.</span></div>
+        <div class="card"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18V6m5 12V10m5 8V4m5 14v-7"/></svg><strong>Performance</strong><span>Profiling, hot-path optimization, allocation reduction, batching, pooling, and benchmarking.</span></div>
+        <div class="card"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v14H4z"/><path d="M8 9h8m-8 4h5"/></svg><strong>Serialization</strong><span>Buffers, schemas, compact representations, validation, and custom data codecs.</span></div>
+        <div class="card"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 9v11"/></svg><strong>Reactive UI</strong><span>Declarative UI architecture using Vide/Ripple-style state and reusable components.</span></div>
+        <div class="card"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48 2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48 2.83-2.83"/><circle cx="12" cy="12" r="3"/></svg><strong>Game systems</strong><span>Progression, inventories, worlds, quests, gameplay loops, simulation, and live game features.</span></div>
+      </div>
+    </section>
+
+    <section class="doc-section" id="stack">
+      <h2>Toolbox<a class="anchor-link" aria-label="Link to Toolbox" href="#stack">#</a></h2>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Development toolbox">
+        <table>
+          <thead><tr><th scope="col">Area</th><th scope="col">Tools & technologies</th></tr></thead>
+          <tbody>
+            <tr><td>Core development</td><td><code>Luau</code> · Roblox Studio · Git · GitHub</td></tr>
+            <tr><td>UI</td><td>Vide · Ripple · reactive / declarative component architecture</td></tr>
+            <tr><td>Packages</td><td>Wally · Pesde · Ember</td></tr>
+            <tr><td>Workflow</td><td>VS Code · Argon · GitHub Pages</td></tr>
+            <tr><td>Performance</td><td>MicroProfiler · benchmark harnesses · buffers · object pooling</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="doc-section" id="principles">
+      <h2>How I like to build<a class="anchor-link" aria-label="Link to How I like to build" href="#principles">#</a></h2>
+      <div class="principle-list">
+        <div class="principle"><span>01</span><div><strong>Performance is a design concern.</strong><p>Measure first, keep hot paths simple, avoid unnecessary allocations, and optimize systems where it has real impact.</p></div></div>
+        <div class="principle"><span>02</span><div><strong>Modules should have clear ownership.</strong><p>Systems stay easier to extend when responsibilities and client/server boundaries are explicit.</p></div></div>
+        <div class="principle"><span>03</span><div><strong>Readable code scales better.</strong><p>Strong types, predictable names, small APIs, and consistent patterns matter more than clever code.</p></div></div>
+        <div class="principle"><span>04</span><div><strong>Reusable infrastructure pays off.</strong><p>Good utilities and libraries reduce duplicated work across every future feature and project.</p></div></div>
+      </div>
+    </section>
+
+    <section class="doc-section" id="about">
+      <h2>About<a class="anchor-link" aria-label="Link to About" href="#about">#</a></h2>
+      <p>I’m a Roblox developer who enjoys the engineering side of game development as much as the gameplay itself. I like taking complicated systems—networking, simulation, serialization, UI state, data flow—and turning them into infrastructure that is fast, predictable, and easy to work with.</p>
+      <p>I also build developer tooling when an existing solution doesn’t fit what I need. <a href="https://github.com/DarkGamerRoblox/Pancakes" target="_blank" rel="noreferrer">Pancakes</a> is the clearest public example of that.</p>
+    </section>
+
+    <section class="doc-section" id="contact">
+      <h2>Contact & links<a class="anchor-link" aria-label="Link to Contact and links" href="#contact">#</a></h2>
+      <p>Want to see the code behind my public work or get in touch about development?</p>
+      <div class="cards contact-cards">
+        <a class="card" href="https://github.com/DarkGamerRoblox" target="_blank" rel="noreferrer"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.3-.4 6.8-1.6 6.8-7A5.4 5.4 0 0 0 19.3 4 5 5 0 0 0 19.2.5S18 0 15 2a13.4 13.4 0 0 0-7 0C5 0 3.8.5 3.8.5A5 5 0 0 0 3.7 4a5.4 5.4 0 0 0-1.5 3.7c0 5.4 3.5 6.6 6.8 7A4.8 4.8 0 0 0 8 18v4"/><path d="M8 19c-3 .9-3-1.5-4-2"/></svg><strong>GitHub <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14m-5-5 5 5-5 5"/></svg></strong><span>Libraries, source code, releases, and technical work.</span></a>
+        <a class="card" href="https://darkgamer-portfolio.carrd.co/" target="_blank" rel="noreferrer"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg><strong>Current portfolio <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14m-5-5 5 5-5 5"/></svg></strong><span>Existing Carrd page and current contact information.</span></a>
+      </div>
+    </section>
+
+    <div class="page-bottom">
+      <nav class="pagination" aria-label="Portfolio navigation">
+        <a href="#overview"><span>Back</span>Introduction</a>
+        <a class="next" href="https://github.com/DarkGamerRoblox" target="_blank" rel="noreferrer"><span>Next</span>Explore GitHub</a>
+      </nav>
+      <footer class="footer"><span>Dark Gamer · Roblox / Luau systems development</span><a href="#main-content">Back to top ↑</a></footer>
+    </div>
+  </main>
+
+  <aside class="toc" aria-label="On this page">
+    <div class="toc-title">On this page</div>
+    <nav>
+      <a class="active" href="#snapshot">Developer snapshot</a>
+      <a href="#work">Selected work</a>
+      <a href="#open-source">Open source</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#stack">Toolbox</a>
+      <a href="#principles">Principles</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="toc-foot">Interested in the technical side?<br><a href="https://github.com/DarkGamerRoblox/Pancakes" target="_blank" rel="noreferrer">View Pancakes <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14m-5-5 5 5-5 5"/></svg></a></div>
+  </aside>
+</div>
+
+<dialog class="mobile-drawer" id="mobile-navigation" aria-label="Portfolio navigation">
+  <div class="drawer-head">
+    <a class="brand" href="#overview"><span class="brand-mark"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 7.5 12 3l8 4.5v9L12 21l-8-4.5z"/></svg></span>Dark Gamer</a>
+    <button class="icon-button" type="button" data-close-menu aria-label="Close navigation"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m6 6 12 12M6 18 18 6"/></svg></button>
+  </div>
+  <nav class="mobile-nav">
+    <div class="nav-group"><div class="nav-heading">Overview</div><a class="nav-link" href="#overview">Introduction</a><a class="nav-link" href="#snapshot">Developer snapshot</a></div>
+    <div class="nav-group"><div class="nav-heading">Selected work</div><a class="nav-link" href="#work">Roblox experiences</a><a class="nav-link" href="#open-source">Pancakes</a></div>
+    <div class="nav-group"><div class="nav-heading">Engineering</div><a class="nav-link" href="#capabilities">Capabilities</a><a class="nav-link" href="#stack">Toolbox</a><a class="nav-link" href="#principles">Principles</a></div>
+    <div class="nav-group"><div class="nav-heading">Profile</div><a class="nav-link" href="#about">About</a><a class="nav-link" href="#contact">Contact</a></div>
+  </nav>
+</dialog>
+
+<script src="client.js"></script>
+</body>
+</html>
