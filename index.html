@@ -74,8 +74,7 @@
       <div class="nav-group">
         <div class="nav-heading">Engineering</div>
         <a class="nav-link" href="#capabilities">Capabilities</a>
-        <a class="nav-link" href="#stack">Toolbox</a>
-        <a class="nav-link" href="#principles">Principles</a>
+        <a class="nav-link" href="#principles">Engineering approach</a>
       </div>
       <div class="nav-group">
         <div class="nav-heading">Profile</div>
@@ -229,29 +228,14 @@
       </div>
     </section>
 
-    <section class="doc-section" id="stack">
-      <h2>Toolbox<a class="anchor-link" aria-label="Link to Toolbox" href="#stack">#</a></h2>
-      <div class="table-wrap" tabindex="0" role="region" aria-label="Development toolbox">
-        <table>
-          <thead><tr><th scope="col">Area</th><th scope="col">Tools & technologies</th></tr></thead>
-          <tbody>
-            <tr><td>Core development</td><td><code>Luau</code> · Roblox Studio · Git · GitHub</td></tr>
-            <tr><td>UI</td><td>Vide · Ripple · reactive / declarative component architecture</td></tr>
-            <tr><td>Packages</td><td>Wally · Pesde · Ember</td></tr>
-            <tr><td>Workflow</td><td>VS Code · Argon · GitHub Pages</td></tr>
-            <tr><td>Performance</td><td>MicroProfiler · benchmark harnesses · buffers · object pooling</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
     <section class="doc-section" id="principles">
-      <h2>How I like to build<a class="anchor-link" aria-label="Link to How I like to build" href="#principles">#</a></h2>
+      <h2>Engineering approach<a class="anchor-link" aria-label="Link to Engineering approach" href="#principles">#</a></h2>
+      <p>I prefer systems that stay fast and understandable as the project gets larger. The goal is not to add architecture for its own sake—it is to make features easier to build, profile, change, and maintain.</p>
       <div class="principle-list">
-        <div class="principle"><span>01</span><div><strong>Performance is a design concern.</strong><p>Measure first, keep hot paths simple, avoid unnecessary allocations, and optimize systems where it has real impact.</p></div></div>
-        <div class="principle"><span>02</span><div><strong>Modules should have clear ownership.</strong><p>Systems stay easier to extend when responsibilities and client/server boundaries are explicit.</p></div></div>
-        <div class="principle"><span>03</span><div><strong>Readable code scales better.</strong><p>Strong types, predictable names, small APIs, and consistent patterns matter more than clever code.</p></div></div>
-        <div class="principle"><span>04</span><div><strong>Reusable infrastructure pays off.</strong><p>Good utilities and libraries reduce duplicated work across every future feature and project.</p></div></div>
+        <div class="principle"><span>01</span><div><strong>Design for the hot path.</strong><p>I think about data layout, allocations, update frequency, replication cost, and algorithmic work early. When performance matters, I benchmark the actual workload instead of guessing.</p></div></div>
+        <div class="principle"><span>02</span><div><strong>Give every system a clear boundary.</strong><p>Client, server, UI, data, and shared code should have explicit ownership. I prefer focused modules with small public APIs over large modules that know about everything.</p></div></div>
+        <div class="principle"><span>03</span><div><strong>Optimize for the next person reading it.</strong><p>Consistent naming, straightforward control flow, Luau type annotations, and predictable patterns make a codebase easier to debug and extend than clever shortcuts do.</p></div></div>
+        <div class="principle"><span>04</span><div><strong>Abstract repeated problems, not hypothetical ones.</strong><p>I turn proven patterns into reusable components and libraries when they remove real duplication. That keeps infrastructure useful without making simple features unnecessarily complicated.</p></div></div>
       </div>
     </section>
 
@@ -262,11 +246,12 @@
     </section>
 
     <section class="doc-section" id="contact">
-      <h2>Contact & links<a class="anchor-link" aria-label="Link to Contact and links" href="#contact">#</a></h2>
-      <p>Want to see the code behind my public work or get in touch about development?</p>
+      <h2>Contact<a class="anchor-link" aria-label="Link to Contact" href="#contact">#</a></h2>
+      <p>For development work, collaboration, or questions about my projects, you can reach me directly here.</p>
       <div class="cards contact-cards">
-        <a class="card" href="https://github.com/DarkGamerRoblox" target="_blank" rel="noreferrer"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.3-.4 6.8-1.6 6.8-7A5.4 5.4 0 0 0 19.3 4 5 5 0 0 0 19.2.5S18 0 15 2a13.4 13.4 0 0 0-7 0C5 0 3.8.5 3.8.5A5 5 0 0 0 3.7 4a5.4 5.4 0 0 0-1.5 3.7c0 5.4 3.5 6.6 6.8 7A4.8 4.8 0 0 0 8 18v4"/><path d="M8 19c-3 .9-3-1.5-4-2"/></svg><strong>GitHub <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14m-5-5 5 5-5 5"/></svg></strong><span>Libraries, source code, releases, and technical work.</span></a>
-        <a class="card" href="https://darkgamer-portfolio.carrd.co/" target="_blank" rel="noreferrer"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg><strong>Current portfolio <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14m-5-5 5 5-5 5"/></svg></strong><span>Existing Carrd page and current contact information.</span></a>
+        <a class="card" href="https://discord.com/users/729738825324036186" target="_blank" rel="noreferrer"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 8.5c2.7-1.2 5.3-1.2 8 0"/><path d="M7 17c-2-2.8-2.3-6.2-1-10 1.4-1 2.5-1.4 3.3-1.6l.8 1.2a9 9 0 0 1 3.8 0l.8-1.2C15.5 5.6 16.6 6 18 7c1.3 3.8 1 7.2-1 10-1.4 1-2.8 1.6-4 1.8l-.9-1.3"/><circle cx="9.5" cy="12" r=".7" fill="currentColor" stroke="none"/><circle cx="14.5" cy="12" r=".7" fill="currentColor" stroke="none"/></svg><strong>Discord <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14m-5-5 5 5-5 5"/></svg></strong><span>Best place to contact me directly about development or collaboration.</span></a>
+        <a class="card" href="https://github.com/DarkGamerRoblox" target="_blank" rel="noreferrer"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.3-.4 6.8-1.6 6.8-7A5.4 5.4 0 0 0 19.3 4 5 5 0 0 0 19.2.5S18 0 15 2a13.4 13.4 0 0 0-7 0C5 0 3.8.5 3.8.5A5 5 0 0 0 3.7 4a5.4 5.4 0 0 0-1.5 3.7c0 5.4 3.5 6.6 6.8 7A4.8 4.8 0 0 0 8 18v4"/><path d="M8 19c-3 .9-3-1.5-4-2"/></svg><strong>GitHub <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14m-5-5 5 5-5 5"/></svg></strong><span>Libraries, source code, releases, and public technical work.</span></a>
+        <a class="card" href="https://www.roblox.com/users/2629139845/profile" target="_blank" rel="noreferrer"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="m6.4 3 14.6 3.4L17.6 21 3 17.6 6.4 3Z"/><path d="m10.2 9.3 4.5 1-1 4.5-4.5-1 1-4.5Z"/></svg><strong>Roblox <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14m-5-5 5 5-5 5"/></svg></strong><span>My Roblox profile and platform identity.</span></a>
       </div>
     </section>
 
@@ -286,8 +271,7 @@
       <a href="#work">Selected work</a>
       <a href="#open-source">Open source</a>
       <a href="#capabilities">Capabilities</a>
-      <a href="#stack">Toolbox</a>
-      <a href="#principles">Principles</a>
+      <a href="#principles">Engineering approach</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -303,7 +287,7 @@
   <nav class="mobile-nav">
     <div class="nav-group"><div class="nav-heading">Overview</div><a class="nav-link" href="#overview">Introduction</a><a class="nav-link" href="#snapshot">Developer snapshot</a></div>
     <div class="nav-group"><div class="nav-heading">Selected work</div><a class="nav-link" href="#work">Roblox experiences</a><a class="nav-link" href="#open-source">Pancakes</a></div>
-    <div class="nav-group"><div class="nav-heading">Engineering</div><a class="nav-link" href="#capabilities">Capabilities</a><a class="nav-link" href="#stack">Toolbox</a><a class="nav-link" href="#principles">Principles</a></div>
+    <div class="nav-group"><div class="nav-heading">Engineering</div><a class="nav-link" href="#capabilities">Capabilities</a><a class="nav-link" href="#principles">Engineering approach</a></div>
     <div class="nav-group"><div class="nav-heading">Profile</div><a class="nav-link" href="#about">About</a><a class="nav-link" href="#contact">Contact</a></div>
   </nav>
 </dialog>

@@ -63,7 +63,7 @@ function markActive(id) {
     if (active) link.setAttribute('aria-current', 'location');
     else link.removeAttribute('aria-current');
   }
-  const group = ['work'].includes(id) ? '#work' : id === 'open-source' ? '#open-source' : ['capabilities','stack','principles'].includes(id) ? '#capabilities' : ['about','contact'].includes(id) ? '#about' : null;
+  const group = ['work'].includes(id) ? '#work' : id === 'open-source' ? '#open-source' : ['capabilities','principles'].includes(id) ? '#capabilities' : ['about','contact'].includes(id) ? '#about' : null;
   for (const link of topLinks) link.classList.toggle('active', group ? link.hash === group : false);
 }
 
