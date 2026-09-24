@@ -904,6 +904,24 @@ pre code {
     background: #090a0c;
 }
 
+.showcase-media-links {
+    display: flex;
+    gap: 14px;
+    padding: 10px 14px;
+    border-top: 1px solid var(--border);
+    background: var(--panel);
+}
+
+.showcase-media-links a {
+    color: var(--muted);
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.showcase-media-links a:hover {
+    color: var(--accent);
+}
+
 .showcase-body {
     display: grid;
     grid-template-columns: minmax(0, 1.25fr) minmax(250px, .75fr);
