@@ -35,6 +35,7 @@
 
     <nav class="topnav" aria-label="Primary navigation">
       <a class="active" href="#work">Work</a>
+      <a href="#showcase">Showcase</a>
       <a href="#open-source">Open source</a>
       <a href="#capabilities">Capabilities</a>
       <a href="#about">About</a>
@@ -69,6 +70,7 @@
       <div class="nav-group">
         <div class="nav-heading">Selected work</div>
         <a class="nav-link" href="#work">Roblox experiences</a>
+        <a class="nav-link" href="#showcase">Showcase</a>
         <a class="nav-link" href="#open-source">Libraries</a>
       </div>
       <div class="nav-group">
@@ -200,6 +202,51 @@
       </div>
     </section>
 
+
+    <section class="doc-section" id="showcase">
+      <h2>Showcase of my Work<a class="anchor-link" aria-label="Link to Showcase of my Work" href="#showcase">#</a></h2>
+      <p>Short demonstrations of systems I have built, with a quick explanation of what is happening and the engineering behind it.</p>
+
+      <article class="showcase-card">
+        <div class="showcase-media">
+          <video
+            controls
+            playsinline
+            preload="metadata"
+            poster="assets/showcase/exists-system-poster.jpg"
+            aria-label="Exists system demonstration"
+          >
+            <source src="assets/showcase/exists-system.mp4" type="video/mp4" />
+            Your browser does not support HTML video.
+          </video>
+        </div>
+
+        <div class="showcase-body">
+          <div class="showcase-copy">
+            <div class="showcase-kicker">
+              <span class="eyebrow mini">SYSTEM SHOWCASE</span>
+              <span class="project-status">Exists</span>
+            </div>
+            <h3>Global Exists System</h3>
+            <p>The clip shows a bee's <strong>Exists</strong> value updating live inside the inventory as the tracked amount changes. The UI receives the latest value reactively, so the displayed count updates without needing a manual refresh.</p>
+          </div>
+
+          <div class="showcase-technical">
+            <span class="showcase-label">Behind the demo</span>
+            <p>Exists is a cross-server counting system built around sharded live state, batched updates, server-to-server replication, durable snapshots, and client subscriptions.</p>
+            <div class="tag-row">
+              <span>MemoryStore</span>
+              <span>MessagingService</span>
+              <span>DataStore</span>
+              <span>Sharding</span>
+              <span>Batching</span>
+              <span>Reactive sync</span>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
     <section class="doc-section" id="open-source">
       <h2>Open-source engineering<a class="anchor-link" aria-label="Link to Open-source engineering" href="#open-source">#</a></h2>
       <p>Outside game development, I build reusable Luau infrastructure designed around real Roblox workloads.</p>
@@ -288,6 +335,7 @@
     <nav>
       <a class="active" href="#snapshot">Developer snapshot</a>
       <a href="#work">Selected work</a>
+      <a href="#showcase">Showcase</a>
       <a href="#open-source">Open source</a>
       <a href="#capabilities">Capabilities</a>
       <a href="#principles">Engineering approach</a>
@@ -305,7 +353,7 @@
   </div>
   <nav class="mobile-nav">
     <div class="nav-group"><div class="nav-heading">Overview</div><a class="nav-link" href="#overview">Introduction</a><a class="nav-link" href="#snapshot">Developer snapshot</a></div>
-    <div class="nav-group"><div class="nav-heading">Selected work</div><a class="nav-link" href="#work">Roblox experiences</a><a class="nav-link" href="#open-source">Libraries</a></div>
+    <div class="nav-group"><div class="nav-heading">Selected work</div><a class="nav-link" href="#work">Roblox experiences</a><a class="nav-link" href="#showcase">Showcase</a><a class="nav-link" href="#open-source">Libraries</a></div>
     <div class="nav-group"><div class="nav-heading">Engineering</div><a class="nav-link" href="#capabilities">Capabilities</a><a class="nav-link" href="#principles">Engineering approach</a></div>
     <div class="nav-group"><div class="nav-heading">Profile</div><a class="nav-link" href="#about">About</a><a class="nav-link" href="#contact">Contact</a></div>
   </nav>

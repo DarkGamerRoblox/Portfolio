@@ -1,3 +1,4 @@
+/* ==================== Theme ==================== */
 :root {
     color-scheme: dark;
     --bg: #111214;
@@ -41,6 +42,7 @@
     --header: rgba(255,255,255,.96);
 }
 
+/* ==================== Base / reset ==================== */
 * {
     box-sizing: border-box;
 }
@@ -115,6 +117,7 @@ button:focus-visible,
     vertical-align: middle;
 }
 
+/* ==================== Top navigation ==================== */
 .topbar {
     height: 76px;
     position: sticky;
@@ -243,6 +246,7 @@ button:focus-visible,
     display: block;
 }
 
+/* ==================== Page layout ==================== */
 .layout {
     display: grid;
     grid-template-columns: 238px minmax(0,1fr) 190px;
@@ -309,6 +313,7 @@ button:focus-visible,
     display: block;
 }
 
+/* ==================== Article / typography ==================== */
 .article {
     min-width: 0;
     padding: 42px 48px 48px;
@@ -478,6 +483,7 @@ button:focus-visible,
     opacity: 1;
 }
 
+/* ==================== Hero overview ==================== */
 .hero-overview {
     margin-top: 30px;
     border: 1px solid var(--border);
@@ -562,6 +568,7 @@ button:focus-visible,
     color: var(--muted);
 }
 
+/* ==================== Code blocks ==================== */
 pre,
 code {
     font-family: "SFMono-Regular",Consolas,"Liberation Mono",monospace;
@@ -633,6 +640,7 @@ code {
     background: var(--surface);
 }
 
+/* ==================== Code blocks ==================== */
 pre {
     margin: 0;
     padding: 21px 22px;
@@ -669,6 +677,7 @@ pre code {
     color: var(--type);
 }
 
+/* ==================== Callouts ==================== */
 .callout {
     display: flex;
     gap: 12px;
@@ -697,6 +706,7 @@ pre code {
     line-height: 1.75;
 }
 
+/* ==================== Cards ==================== */
 .cards {
     display: grid;
     grid-template-columns: repeat(3,minmax(0,1fr));
@@ -747,6 +757,7 @@ pre code {
     color: var(--muted);
 }
 
+/* ==================== Stats ==================== */
 .stat-grid {
     display: grid;
     grid-template-columns: repeat(4,minmax(0,1fr));
@@ -781,6 +792,7 @@ pre code {
     margin-top: 4px;
 }
 
+/* ==================== Projects ==================== */
 .project-list {
     display: flex;
     flex-direction: column;
@@ -880,6 +892,84 @@ pre code {
     border-style: dashed;
 }
 
+
+/* ==================== Work showcase ==================== */
+.showcase-card {
+    margin-top: 24px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--panel);
+}
+
+.showcase-media {
+    position: relative;
+    overflow: hidden;
+    background: #090a0c;
+    border-bottom: 1px solid var(--border);
+}
+
+.showcase-media video {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 560px;
+    object-fit: contain;
+    background: #090a0c;
+}
+
+.showcase-body {
+    display: grid;
+    grid-template-columns: minmax(0, 1.25fr) minmax(250px, .75fr);
+    gap: 34px;
+    padding: 22px;
+}
+
+.showcase-kicker {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.showcase-kicker .eyebrow {
+    margin: 0;
+}
+
+.showcase-copy h3 {
+    margin: 0 0 8px;
+    font-size: 20px;
+    line-height: 1.35;
+    letter-spacing: -.35px;
+}
+
+.showcase-copy p,
+.showcase-technical p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+.showcase-technical {
+    padding-left: 26px;
+    border-left: 1px solid var(--border);
+}
+
+.showcase-label {
+    display: block;
+    margin-bottom: 7px;
+    color: var(--text);
+    font: 600 12px ui-monospace, SFMono-Regular, Consolas, monospace;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+}
+
+.showcase-technical .tag-row {
+    margin-top: 15px;
+}
+
+/* ==================== Open-source libraries ==================== */
 .oss-card {
     border: 1px solid var(--border);
     border-radius: 10px;
@@ -930,6 +1020,7 @@ pre code {
     margin-bottom: 0;
 }
 
+/* ==================== Tables ==================== */
 .table-wrap {
     overflow-x: auto;
     max-width: 100%;
@@ -974,6 +1065,7 @@ td:first-child {
     width: 28%;
 }
 
+/* ==================== Engineering approach / contact ==================== */
 .principle-list {
     border-top: 1px solid var(--border);
     margin-top: 23px;
@@ -1015,6 +1107,7 @@ td:first-child {
     justify-self: end;
 }
 
+/* ==================== Table of contents ==================== */
 .toc {
     padding: 46px 0 0 20px;
     position: sticky;
@@ -1066,6 +1159,7 @@ td:first-child {
     height: 13px;
 }
 
+/* ==================== Pagination / footer ==================== */
 .page-bottom {
     margin-top: 60px;
     border-top: 1px solid var(--border);
@@ -1111,6 +1205,7 @@ td:first-child {
     margin-top: 25px;
 }
 
+/* ==================== Mobile navigation ==================== */
 .mobile-menu-button,
 .mobile-bar {
     display: none;
@@ -1149,6 +1244,7 @@ td:first-child {
     display: block;
 }
 
+/* ==================== @media (min-width:1500px) ==================== */
 @media (min-width:1500px) {
     .article {
         padding-left: 60px;
@@ -1159,6 +1255,7 @@ td:first-child {
     }
 }
 
+/* ==================== @media (max-width:1199px) ==================== */
 @media (max-width:1199px) {
     .layout {
         grid-template-columns: 220px minmax(0,1fr);
@@ -1189,6 +1286,7 @@ td:first-child {
     }
 }
 
+/* ==================== @media (max-width:850px) ==================== */
 @media (max-width:850px) {
     .hero-overview-grid {
         grid-template-columns: 1fr;
@@ -1273,6 +1371,16 @@ td:first-child {
     .project-content {
         grid-template-columns: 1fr;
     }
+    .showcase-body {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .showcase-technical {
+        padding-left: 0;
+        padding-top: 20px;
+        border-left: 0;
+        border-top: 1px solid var(--border);
+    }
     .project-content .tag-row {
         justify-content: flex-start;
         margin-top: 14px;
@@ -1286,6 +1394,7 @@ td:first-child {
     }
 }
 
+/* ==================== @media (max-width:540px) ==================== */
 @media (max-width:540px) {
     .hero-overview-head {
         align-items: flex-start;
@@ -1384,6 +1493,12 @@ td:first-child {
     .project-card {
         padding: 17px;
     }
+    .showcase-body {
+        padding: 17px;
+    }
+    .showcase-kicker {
+        align-items: flex-start;
+    }
     .project-topline {
         margin-bottom: 12px;
     }
@@ -1407,6 +1522,7 @@ td:first-child {
     }
 }
 
+/* ==================== @media (prefers-reduced-motion:reduce) ==================== */
 @media (prefers-reduced-motion:reduce) {
     * {
         scroll-behavior: auto !important;
@@ -1414,6 +1530,7 @@ td:first-child {
     }
 }
 
+/* ==================== @media print ==================== */
 @media print {
     .topbar,
     .sidebar,
